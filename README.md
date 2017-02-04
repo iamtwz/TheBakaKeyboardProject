@@ -1,2 +1,2 @@
-# TheBakaKeyboardProject
-The Baka Keyboard Project
+# The Baka Keyboard Project
+An Open Source Keyboard with TWO Keys
