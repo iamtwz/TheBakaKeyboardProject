@@ -56,8 +56,8 @@
 </layers>
 <board>
 <plain>
-<text x="7.62" y="1.27" size="1.778" layer="20" rot="SR0">The Baka Keyboard Project</text>
-<text x="34.29" y="44.45" size="1.778" layer="20" rot="SR180">Version 0.11 01/2017</text>
+<text x="7.62" y="1.27" size="1.4224" layer="20" font="vector" rot="SR0">The Baka Keyboard Project</text>
+<text x="35.56" y="44.45" size="1.4224" layer="20" font="vector" rot="SR180">Version 0.11 01/2017</text>
 <wire x1="0" y1="0" x2="0" y2="45.72" width="0" layer="20"/>
 <wire x1="0" y1="45.72" x2="45.72" y2="45.72" width="0" layer="20"/>
 <wire x1="45.72" y1="45.72" x2="45.72" y2="0" width="0" layer="20"/>
