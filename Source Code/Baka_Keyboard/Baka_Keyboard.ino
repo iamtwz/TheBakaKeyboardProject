@@ -1,28 +1,23 @@
-// use this option for OSX:
-char ctrlKey = KEY_LEFT_GUI;
-// use this option for Windows and Linux:
-//  char ctrlKey = KEY_LEFT_CTRL;  
+#include <Keyboard.h>
 
 void setup() {
-  // make pin 2 an input and turn on the 
-  // pullup resistor so it goes high unless
-  // connected to ground:
-  pinMode(2, INPUT_PULLUP);
-  // initialize control over the keyboard:
+  pinMode(9, INPUT_PULLUP);
+  pinMode(10, INPUT_PULLUP);
   Keyboard.begin();
 }
 
 void loop() {
-  while (digitalRead(2) == HIGH) {
-    // do nothing until pin 2 goes low
-    delay(500);
+  if (digitalRead(9) == LOW) {
+    Keyboard.press('1');
+    delay(10);
   }
-  delay(1000);
-  // new document:
-  Keyboard.press(ctrlKey);
-  Keyboard.press('n');
-  delay(100);
+
+  if (digitalRead(10) == LOW) {
+    Keyboard.press('0');
+    delay(10);
+  }
+  
   Keyboard.releaseAll();
-  // wait for new window to open:
-  delay(1000);
+  delay(50);
 }
+
